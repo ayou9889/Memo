@@ -1,0 +1,52 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+}
+body{
+    background-color: #2f3957;
+    color:white;    
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+body>main{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+}
+body>main>div.d{
+    width:250px;
+    border:1px solid white;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+    gap:10px;
+    border-radius: 10px;
+}
+body #img{
+    width:50px;
+    aspect-ratio: 1/1;
+    background-image: url("/Memo/assets/images/p.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border:1px solid white;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+body #img:hover{
+    background-color: white;
+}
