@@ -1,0 +1,14 @@
+body>main>form>div:nth-child(2){
+    flex-direction: column;
+    width:100%;
+}
+body>main>form>div:nth-child(2)>label,body>main>form>div:nth-child(2)>textarea{
+    width:100%;
+}
+body>main>form>div:nth-child(2)>textarea{
+    border-radius: 10px;
+    border:2px solid #171717;
+    outline: none;
+    padding:5px;
+
+}
