@@ -18,7 +18,7 @@ submit.addEventListener("click",(e)=>{
             if(data.success){
                 sessionStorage.setItem("n",n);
                 sessionStorage.setItem("pw",pw);
-                window.location.href="https://oufaddoul.com/Memo/Add-Memo/";
+                window.location.href="https://oufaddoul.com/Memo/Login/Add-Memo/";
             }
         });
 });
