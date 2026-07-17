@@ -20,8 +20,7 @@ submit.addEventListener("click",(e)=>{
                 window.location.href="https://oufaddoul.com/Memo/Login/Add-Memo/";
             }
             else{
-                alert("The username or password is incorrect.
-");
+                alert("The username or password is incorrect.");
             }
         });
 });
