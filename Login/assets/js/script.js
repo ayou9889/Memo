@@ -14,11 +14,14 @@ submit.addEventListener("click",(e)=>{
             password:document.querySelector("[name='password']").value
         })
     }).then((res)=>res.json()).then((data)=>{
-            console.log(data);
             if(data.success){
                 sessionStorage.setItem("n",n);
                 sessionStorage.setItem("pw",pw);
                 window.location.href="https://oufaddoul.com/Memo/Login/Add-Memo/";
+            }
+            else{
+                alert("The username or password is incorrect.
+");
             }
         });
 });
