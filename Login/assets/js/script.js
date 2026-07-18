@@ -1,6 +1,6 @@
 const submit=document.querySelector("input[type='submit']");
 function a(){
-    submit.style.backcgroundColor=""#171717"";
+    submit.style.backcgroundColor="#171717";
     return;
 }
 submit.addEventListener("click",(e)=>{
