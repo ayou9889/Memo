@@ -1,7 +1,6 @@
 const submit=document.querySelector("input[type='submit']");
 function a(){
     submit.style.backcgroundColor="#171717";
-    return;
 }
 submit.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -11,18 +10,22 @@ submit.addEventListener("click",(e)=>{
     if(n === ""){
         alert("You should write your name.");
         a();
+        return;
     }
     else if(n.length < 5){
         alert("Your name should have at least 5 character.");
         a();
+        return;
     }
     if(pw === ""){
         alert("You should write your password.");
         a();
+        return;
     }
     else if(pw.length < 7){
         alert("Your password should have at least 7 character.");
         a();
+        return;
     }
     fetch("https://p01-five.vercel.app/",{
         method:"POST",
