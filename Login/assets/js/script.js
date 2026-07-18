@@ -4,6 +4,22 @@ submit.addEventListener("click",(e)=>{
     e.preventDefault();
     const n=document.querySelector("[name='name']").value;
     const pw=document.querySelector("[name='password']").value;
+    if(n === ""){
+        alert("You should write your name.");
+        return;
+    }
+    else if(n.length < 5){
+        alert("Your name should have at least 5 character.");
+        return;
+    }
+    if(pw === ""){
+        alert("You should write your password.");
+        return;
+    }
+    else if(pw.length < 7){
+        alert("Your password should have at least 7 character.");
+        return;
+    }
     fetch("https://p01-five.vercel.app/",{
         method:"POST",
         headers:{
