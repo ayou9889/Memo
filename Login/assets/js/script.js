@@ -39,7 +39,7 @@ submit.addEventListener("click",(e)=>{
     }).then((res)=>res.json()).then((data)=>{
             a();
             console.log("success",data.success);
-            if(data.success){
+            if(data.success === 0 || data.success === 1){
                 sessionStorage.setItem("n",n);
                 sessionStorage.setItem("pw",pw);
                 window.location.href="https://oufaddoul.com/Memo/Login/Add-Memo/";
