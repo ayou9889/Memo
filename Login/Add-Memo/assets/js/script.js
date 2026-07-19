@@ -4,7 +4,7 @@ let n=null,p=null;
 if(sessionStorage.getItem("n") && sessionStorage.getItem("pw")){
     n=sessionStorage.getItem("n");
     p=sessionStorage.getItem("pw");
-    sessionStorage.clear();
+    // sessionStorage.clear();
 }
 
 let add=true;
