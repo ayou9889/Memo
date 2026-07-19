@@ -38,6 +38,7 @@ submit.addEventListener("click",(e)=>{
         })
     }).then((res)=>res.json()).then((data)=>{
             a();
+            console.log("success",data.success);
             if(data.success){
                 sessionStorage.setItem("n",n);
                 sessionStorage.setItem("pw",pw);
