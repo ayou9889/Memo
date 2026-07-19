@@ -26,7 +26,6 @@ submit.addEventListener("click",(e)=>{
                 txt:document.querySelector("[name='txt']").value
             })
         }).then((res)=>res.json()).then((data)=>{
-                console.log("Data : ",data);
                 if(data.s === 1){
                     alert("The memo was added successfully.");
                 }
