@@ -38,7 +38,6 @@ submit.addEventListener("click",(e)=>{
         })
     }).then((res)=>res.json()).then((data)=>{
             a();
-            console.log("success",data.success);
             if(data.success === 0 || data.success === 1){
                 localStorage.setItem("n",n);
                 localStorage.setItem("pw",pw);
