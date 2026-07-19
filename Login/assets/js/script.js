@@ -12,8 +12,8 @@ submit.addEventListener("click",(e)=>{
         a();
         return;
     }
-    else if(n.length < 5){
-        alert("Your name should have at least 5 character.");
+    else if(n.length < 4){
+        alert("Your name should have at least 4 character.");
         a();
         return;
     }
