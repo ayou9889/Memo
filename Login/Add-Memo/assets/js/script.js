@@ -2,9 +2,9 @@ const submit=document.querySelector("input[type='submit']");
 
 let n=null,p=null;
 if(sessionStorage.getItem("n") && sessionStorage.getItem("pw")){
-    n=sessionStorage.getItem("n");
-    p=sessionStorage.getItem("pw");
-    // sessionStorage.clear();
+    n=localStorage.getItem("n");
+    p=localStorage.getItem("pw");
+    localStorage.clear();
 }
 
 let add=true;
