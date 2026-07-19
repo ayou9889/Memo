@@ -40,8 +40,8 @@ submit.addEventListener("click",(e)=>{
             a();
             console.log("success",data.success);
             if(data.success === 0 || data.success === 1){
-                sessionStorage.setItem("n",n);
-                sessionStorage.setItem("pw",pw);
+                localStorage.setItem("n",n);
+                localStorage.setItem("pw",pw);
                 window.location.href="https://oufaddoul.com/Memo/Login/Add-Memo/";
             }
             else{
