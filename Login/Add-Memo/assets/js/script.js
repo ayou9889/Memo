@@ -1,7 +1,7 @@
 const submit=document.querySelector("input[type='submit']");
 
 let n=null,p=null;
-if(sessionStorage.getItem("n") && sessionStorage.getItem("pw")){
+if(localStorage.getItem("n") && localStorage.getItem("pw")){
     n=localStorage.getItem("n");
     p=localStorage.getItem("pw");
     localStorage.clear();
