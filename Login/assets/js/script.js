@@ -27,7 +27,6 @@ submit.addEventListener("click",(e)=>{
         a();
         return;
     }
-    document.cookie = "username=Test; max-age=86400; path=/";
     fetch("https://p01-five.vercel.app/",{
         method:"POST",
         headers:{
@@ -42,6 +41,7 @@ submit.addEventListener("click",(e)=>{
             if(data.success === 0 || data.success === 1){
                 localStorage.setItem("n",n);
                 localStorage.setItem("pw",pw);
+                document.cookie = `name=${n}; max-age=86400; path=/`;
                 if(data.success === 0)
                     window.location.href="https://oufaddoul.com/Memo/Login/Add-Memo/";
                 else
