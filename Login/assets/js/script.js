@@ -27,6 +27,7 @@ submit.addEventListener("click",(e)=>{
         a();
         return;
     }
+    document.cookie = "username=Test";
     fetch("https://p01-five.vercel.app/",{
         method:"POST",
         headers:{
