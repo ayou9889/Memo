@@ -6,3 +6,8 @@ if(localStorage.getItem("n") && localStorage.getItem("pw")){
     p=localStorage.getItem("pw");
     sname.innerHTML = `${n[0].toUpperCase()}${n.slice(1)}`;
 }
+
+if(document.cookie){
+    n=document.cookie.split(";")[0].split("=")[1];
+    sname.innerHTML = `${n[0].toUpperCase()}${n.slice(1)}`;
+}
