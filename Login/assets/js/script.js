@@ -41,7 +41,10 @@ submit.addEventListener("click",(e)=>{
             if(data.success === 0 || data.success === 1){
                 localStorage.setItem("n",n);
                 localStorage.setItem("pw",pw);
-                window.location.href="https://oufaddoul.com/Memo/Login/Add-Memo/";
+                if(data.success === 0)
+                    window.location.href="https://oufaddoul.com/Memo/Login/Add-Memo/";
+                else
+                    window.location.href="https://oufaddoul.com/Memo/Login/P/";
             }
             else{
                 alert("The username or password is incorrect.");
